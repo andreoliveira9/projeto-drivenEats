@@ -5,8 +5,9 @@ function selecionaItem(produto){
         if(p.classList){
              if(p.classList.contains('selecionado')){
                     p.classList.remove('selecionado')
-                    if(p.lastElementChild.lastElementChild){
-                        p.querySelector('ion-icon').style.display = 'none'
+                    icone = p.querySelector('ion-icon')
+                    if(icone){
+                        icone.style.display = 'none'
                     }  
                 }
             }
