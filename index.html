@@ -22,22 +22,21 @@
             <section class="produto">
                 <h2 class="produto__titulo">Primeiro, seu prato</h2>
                 <article class="produto__opcoes">
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/frango.png" alt="" />
-                        
                         <div class="produto__nome">
                             <h3>Frango Yin Yang</h3>
                         </div>
                         <p class="produto__descricao">Um pouco de batata, um pouco de salada</p>
                         <p class="produto__valor">R$ 14,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/frango.png" alt="">
                         <div class="produto__nome"> <h3>Frango Yin Yang</h3> </div>
                         <p class="produto__descricao">Um pouco de batata, um pouco de salada</p>
                         <p class="produto__valor">R$ 14,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/frango.png" alt="">
                         <div class="produto__nome"><h3>Frango Yin Yang</h3></div>
                         <p class="produto__descricao">Um pouco de batata, um pouco de salada</p>
@@ -48,7 +47,7 @@
             <section class="produto">
                 <h2 class="produto__titulo">Agora, sua bebida</h2>
                 <article class="produto__opcoes">
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/coca.png" alt="" />
                         
                         <div class="produto__nome">
@@ -57,7 +56,7 @@
                         <p class="produto__descricao">Lata 350ml</p>
                         <p class="produto__valor">R$ 4,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/coca.png" alt="" />
                         
                         <div class="produto__nome">
@@ -66,7 +65,7 @@
                         <p class="produto__descricao">Lata 350ml</p>
                         <p class="produto__valor">R$ 4,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/coca.png" alt="" />
                         
                         <div class="produto__nome">
@@ -80,7 +79,7 @@
             <section class="produto padding-bottom">
                 <h2 class="produto__titulo">Agora, sua sobremesa</h2>
                 <article class="produto__opcoes">
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img src="media/pudim.png" alt="" />
                         
                         <div class="produto__nome">
@@ -89,7 +88,7 @@
                         <p class="produto__descricao">Apenas Pudim</p>
                         <p class="produto__valor">R$ 7,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)">
                         <img class="produto__imagem-sobremesa" src="media/pudim.png" alt="" />
                         
                         <div class="produto__nome">
@@ -98,7 +97,7 @@
                         <p class="produto__descricao">Apenas Pudim</p>
                         <p class="produto__valor">R$ 7,90</p>
                     </div>
-                    <div class="produto__opcao">
+                    <div class="produto__opcao" onclick="selecionaItem(this)"> 
                         <img class="produto__imagem-sobremesa" src="media/pudim.png" alt="" />
                         
                         <div class="produto__nome">
@@ -112,8 +111,9 @@
             </section>
         </main>
         <footer class="rodape">
-            <button disabled="disabled">Selecione os 3 itens para fechar o pedido</button>
+            <button class="botao" disabled="disabled">Selecione os 3 itens para fechar o pedido</button>
 
-        </footer>    
+        </footer> 
+        <script type="text/javascript" src="js/script.js"></script>   
     </body>
 </html>
