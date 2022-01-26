@@ -53,10 +53,10 @@ body{
 .produto__opcoes{
     width:100%;
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .produto__opcao{
-    height: 216px;
+
     width: 172px;
     padding: 18px 14px 13px 14px;
     margin-right:16px;
@@ -122,4 +122,15 @@ body{
 }
 .rodape button:disabled{
     background-color: #CBCBCB;
+ }
+ 
+ @media screen and (min-width:600px){
+     .cabecalho, .conteudo, .rodape{
+         width:600px;
+     }
+ }
+ @media screen and (max-width:300px){
+    .cabecalho, .conteudo, .rodape{
+        width:300px;
+    }
  }
