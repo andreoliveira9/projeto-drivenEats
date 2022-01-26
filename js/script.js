@@ -6,15 +6,13 @@ function selecionaItem(produto){
              if(p.classList.contains('selecionado')){
                     p.classList.remove('selecionado')
                     if(p.lastElementChild.lastElementChild){
-                        p.lastElementChild.lastElementChild.style.display = 'none'
-                    }
-                    
-                    
+                        p.querySelector('ion-icon').style.display = 'none'
+                    }  
                 }
             }
         })
     produto.classList.add("selecionado")
-    produto.lastElementChild.lastElementChild.style.display = 'block'
+    produto.querySelector('ion-icon').style.display = 'block'
     
     if(contaSelecionados() == 3){
         let botao = document.querySelector('button')
