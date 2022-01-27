@@ -1,9 +1,9 @@
 function selecionaItem(produto){
     let produtos = produto.parentNode
 
-    produtos.childNodes.forEach(p =>{
-            if(p.classList){
-                if(p.classList.contains('selecionado')){
+    produtos.childNodes.forEach(function(p){
+        if(p.classList){
+             if(p.classList.contains('selecionado')){
                     p.classList.remove('selecionado')
                     icone = p.querySelector('ion-icon') 
                     if(icone){
@@ -17,7 +17,7 @@ function selecionaItem(produto){
     
     if(contaSelecionados() == 3){
         let botao = document.querySelector('button')
-            botao.disabled = false
+            botao.disabled = false;
             botao.innerHTML = "Fechar Pedido"
 
     }
