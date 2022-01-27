@@ -5,7 +5,7 @@ function selecionaItem(produto){
             if(p.classList){
                 if(p.classList.contains('selecionado')){
                     p.classList.remove('selecionado')
-                    icone = p.querySelector('ion-icon')
+                    icone = p.querySelector('ion-icon') 
                     if(icone){
                         icone.style.display = 'none'
                     }  
