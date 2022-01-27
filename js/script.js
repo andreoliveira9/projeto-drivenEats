@@ -16,7 +16,7 @@ function selecionaItem(produto){
     produto.querySelector('ion-icon').style.display = 'block'
     
     if(contaSelecionados() == 3){
-        let botao = document.querySelector('button')
+        let botao = document.querySelector('button') 
             botao.disabled = false;
             botao.innerHTML = "Fechar Pedido"
 
